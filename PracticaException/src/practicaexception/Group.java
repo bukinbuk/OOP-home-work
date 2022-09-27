@@ -72,12 +72,15 @@ public class Group {
 		return false;
 	}
 	
+	public void sortStudentsByLastName() {
+		Arrays.sort(students, Comparator.nullsFirst(new StudentNameComparator()));
+		
+	}
+	
 	@Override
 	public String toString() {
 		
-		Arrays.sort(students, Comparator.nullsFirst(new StudentNameComparator()));
-		
-				
+			
 		String str = "Students : " + groupName +System.lineSeparator()+ "            Name       LastName"+System.lineSeparator();
 		for (int i = 0; i< students.length; i++) {
 			if (students[i]!= null) {
