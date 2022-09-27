@@ -1,6 +1,9 @@
 package practicaexception;
 
 import java.util.Arrays;
+import java.util.Comparator;
+
+
 
 public class Group {
 	private String groupName;
@@ -11,9 +14,6 @@ public class Group {
 		students = new Student[10];
 	}
 	
-
-
-
 	public String getGroupName() {
 		return groupName;
 	}
@@ -74,6 +74,10 @@ public class Group {
 	
 	@Override
 	public String toString() {
+		
+		Arrays.sort(students, Comparator.nullsFirst(new StudentNameComparator()));
+		
+				
 		String str = "Students : " + groupName +System.lineSeparator()+ "            Name       LastName"+System.lineSeparator();
 		for (int i = 0; i< students.length; i++) {
 			if (students[i]!= null) {
