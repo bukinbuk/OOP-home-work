@@ -10,24 +10,24 @@ public class InputDataStudent {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void AddStudent(Group group) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Count of Students ");
-		int count = sc.nextInt();
-		
-		group.setGroupName(InputGroupName());
-		for (int i =0; i<count; i++) {
-			System.out.println("Student #"+ (i+1));
-			Student student = new Student(InputStudentName(), InputStudentLastName(), InputStudentGender(), InputIdStudent(), group.getGroupName());
-			try {
-				group.addStudent(student);
-			} catch (GroupOverflowException e) {
-				System.out.println("Gorup over flow!!!!");
-				break;
-			}
-		}
-		
-	}
+//	public void AddStudent(Group group) {
+////		Scanner sc = new Scanner(System.in);
+////		System.out.println("Count of Students ");
+////		int count = sc.nextInt();
+////		
+////		group.setGroupName(InputGroupName());
+////		for (int i =0; i<count; i++) {
+////			System.out.println("Student #"+ i+1));
+////			Student student = new Student(InputStudentName(), InputStudentLastName(), InputStudentGender(), InputIdStudent(), group.getGroupName());
+////			try {
+////				group.addStudent(student);
+////			} catch (GroupOverflowException e) {
+////				System.out.println("Gorup over flow!!!!");
+////				break;
+////			}
+////		}
+//		
+//	}
 	
 	public String InputGroupName() {
 		Scanner sc = new Scanner(System.in);
