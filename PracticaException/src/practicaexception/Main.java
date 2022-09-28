@@ -15,10 +15,10 @@ public class Main {
 		System.out.println("Count of Students ");
 		int count = sc.nextInt();
 		
-		group.setGroupName(inputData.InputGroupName());
+		group.setGroupName(inputData.inputGroupName());
 		for (int i = 0; i<count; i++) {
 			System.out.println("Student #"+ (i+1));
-			student = new Student(inputData.InputStudentName(), inputData.InputStudentLastName(), inputData.InputStudentGender(), inputData.InputIdStudent(), group.getGroupName());
+			student = new Student(inputData.inputStudentName(), inputData.inputStudentLastName(), inputData.inputStudentGender(), inputData.inputIdStudent(), group.getGroupName());
 			try {
 				group.addStudent(student);
 			} catch (GroupOverflowException e) {
@@ -28,7 +28,7 @@ public class Main {
 		}
 		
 		
-		inputData.AddStudent(group);
+		//inputData.addStudent(group);
 		System.out.println(group.toString());
 		
 		group.removeStudentByID(1133);

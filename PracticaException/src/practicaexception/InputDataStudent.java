@@ -10,7 +10,7 @@ public class InputDataStudent {
 		// TODO Auto-generated constructor stub
 	}
 
-//	public void AddStudent(Group group) {
+//	public void addStudent(Group group) {
 ////		Scanner sc = new Scanner(System.in);
 ////		System.out.println("Count of Students ");
 ////		int count = sc.nextInt();
@@ -29,7 +29,7 @@ public class InputDataStudent {
 //		
 //	}
 	
-	public String InputGroupName() {
+	public String inputGroupName() {
 		Scanner sc = new Scanner(System.in);
 		String groupName = null;
 		while ( groupName == null || groupName == "") {
@@ -38,7 +38,7 @@ public class InputDataStudent {
 		}
 		return groupName;
 	}
-	public String InputStudentName() {
+	public String inputStudentName() {
 		Scanner sc = new Scanner(System.in);
 		String name = null;
 		while (name == "" || name == null) {
@@ -47,7 +47,7 @@ public class InputDataStudent {
 		}
 		return name;
 	}
-	public String InputStudentLastName() {
+	public String inputStudentLastName() {
 		Scanner sc = new Scanner(System.in);
 		String name = null;
 		while (name == "" || name == null) {
@@ -57,7 +57,7 @@ public class InputDataStudent {
 		return name;
 	}
 
-	public Gender InputStudentGender() {
+	public Gender inputStudentGender() {
 		Scanner sc = new Scanner(System.in);
 		String genderString = null;
 		Gender resultGender = null;
@@ -86,7 +86,7 @@ public class InputDataStudent {
 	}
 
 	
-	public int InputIdStudent() {
+	public int inputIdStudent() {
 		Scanner sc = new Scanner(System.in);
 		int id = 0;
 		while (id == 0) {
